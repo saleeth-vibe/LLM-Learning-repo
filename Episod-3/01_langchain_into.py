@@ -6,4 +6,4 @@ llm = ChatOllama(model=model_name)
 
 response = llm.invoke("What is AI?")
 
-print(response)
+print(response.content)

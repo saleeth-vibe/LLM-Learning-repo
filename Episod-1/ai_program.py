@@ -6,3 +6,4 @@ response = ollama.generate(model = model_name,
                            prompt = prompt)
 
 print(response.response)
+

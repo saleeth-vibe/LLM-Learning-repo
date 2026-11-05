@@ -6,12 +6,12 @@ prompt_template = ChatPromptTemplate.from_messages([
     ("user", "{question}")
 ])
 
-# prompt = prompt_template.invoke({"subject": "Physics",
-#                                 "question": "What is Gravity"}
-#                                 )
-prompt = prompt_template.invoke({"subject": "Kannada",
-                                "question": "What is Vyakarana"}
+prompt = prompt_template.invoke({"subject": "Physics",
+                                "question": "What is Gravity"}
                                 )
+# prompt = prompt_template.invoke({"subject": "Kannada",
+#                                 "question": "What is Vyakarana"}
+#                                 )
 print(prompt)
 
 model_name = "llama3.2:latest"

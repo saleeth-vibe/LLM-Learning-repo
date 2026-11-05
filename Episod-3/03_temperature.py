@@ -1,8 +1,5 @@
 from langchain_ollama import ChatOllama
-
 model_name = "llama3.2:latest"
-
-
 temperatures = [0, 0.5, 2]
 
 for temp in temperatures:

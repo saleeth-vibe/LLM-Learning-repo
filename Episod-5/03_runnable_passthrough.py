@@ -22,3 +22,4 @@ explain_chain = question_prompt_template | llm | parser
 feedback_chain = RunnablePassthrough.assign(answer = explain_chain) | rate_prompt_template | llm | parser
 
 print(feedback_chain.invoke({"question": "What is gravity"}))
+
